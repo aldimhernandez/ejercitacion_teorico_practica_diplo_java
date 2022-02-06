@@ -3,6 +3,7 @@ package com.admCursos.domain;
  * Professor Class
  * @see com.admCursos.domain.Person
  * */
+import java.util.ArrayList;
 import java.util.List;
 
 public class Professor extends Person{
@@ -12,14 +13,20 @@ public class Professor extends Person{
     private List<Course> courses;
 
     //Constructor
-    public Professor(String firstName, String lastName, int docketId, int hoursLeft) {
+    public Professor(String firstName, String lastName, int docketId, int hoursLeft, Float salary
+            , Course course) {
         super(firstName, lastName, docketId);
         this.hoursLeft = hoursLeft;
+        this.salary = new ArrayList<>();
+        this.courses = new ArrayList<>();
     }
 
     //Methods
+    /**
+     * Método para añadir curso al Array List Courses
+     * */
     public void addCourse(Course course) {
-
+        this.courses.add(course);
     }
 
     //Getters and setters

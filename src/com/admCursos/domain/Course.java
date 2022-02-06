@@ -1,5 +1,6 @@
 package com.admCursos.domain;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Course {
@@ -11,17 +12,23 @@ public class Course {
     private String modality;
 
     //Constructor
-    public Course(String courseName, int requiredHours, String modality) {
+    public Course(String courseName, int requiredHours, String modality, Student student,
+                  Float qualifications) {
         this.courseName = courseName;
         this.requiredHours = requiredHours;
         this.modality = modality;
+        this.students = new ArrayList<>();
+        this.qualifications = new ArrayList<>();
     }
 
     //Methods
+    /**
+     * Método para añadir estudiante al Arrays List Student
+     * */
     public void addStudent(Student student) {
-
+        this.students.add(student);
     }
-    
+
     //Getters and setters
     public String getCourseName() {
         return courseName;

@@ -1,5 +1,9 @@
 package com.admCursos;
 
+import com.admCursos.domain.Course;
+import com.admCursos.domain.Person;
+import com.admCursos.domain.Student;
+
 /**
  * General description:
  * El Instituto de Formación Profesional(IFP) tiene como objetivo desarrollar un sistema para
@@ -13,6 +17,6 @@ package com.admCursos;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
     }
 }
