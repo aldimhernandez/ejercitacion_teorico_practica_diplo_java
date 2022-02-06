@@ -1,4 +1,7 @@
 package com.admCursos.domain;
+/**
+ * Super Class: Person
+ * class from which the teacher and student classes will inherit */
 
 public class Person {
     //Attributes
