@@ -7,13 +7,13 @@ public class Person {
     //Attributes
     private String firstName;
     private String lastName;
-    private int studentId;
+    private int docketId;
 
     //Constructor
     public Person(String firstName, String lastName, int studentId) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.studentId = studentId;
+        this.docketId = studentId;
     }
 
     //Methods
@@ -36,10 +36,10 @@ public class Person {
     }
 
     public int getStudentId() {
-        return studentId;
+        return docketId;
     }
 
     public void setStudentId(int studentId) {
-        this.studentId = studentId;
+        this.docketId = studentId;
     }
 }
