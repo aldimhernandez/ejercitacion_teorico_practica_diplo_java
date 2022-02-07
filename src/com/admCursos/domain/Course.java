@@ -12,8 +12,7 @@ public class Course {
     private String modality;
 
     //Constructor
-    public Course(String courseName, int requiredHours, String modality, Student student,
-                  Float qualifications) {
+    public Course(String courseName, int requiredHours, String modality) {
         this.courseName = courseName;
         this.requiredHours = requiredHours;
         this.modality = modality;
